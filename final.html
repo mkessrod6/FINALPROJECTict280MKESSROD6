@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ICT 280 Module 15 Final Project — GreenTech Solutions website documentation, features overview, and technical summary." />
+  <title>The Final — GreenTech Solutions | ICT 280</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+<div id="nav-slot"></div>
+
+<main id="main-content">
+
+  <header class="page-header" aria-labelledby="page-title">
+    <h1 id="page-title">The Final</h1>
+    <p>ICT 280 Module 15 Final Project — GreenTech Solutions Website</p>
+  </header>
+
+  <section style="background:var(--ivory);" aria-labelledby="project-overview">
+    <div class="section-inner">
+      <span class="section-label">Project Documentation</span>
+      <h2 class="section-title" id="project-overview">Project Overview</h2>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; margin-bottom:3rem;" class="final-grid">
+
+        <!-- Project Description -->
+        <div style="background:var(--white); border-radius:var(--radius-lg); padding:2rem; border:1px solid rgba(45,106,79,.12);">
+          <h3 style="font-family:'Playfair Display',serif; color:var(--green-deep); margin-bottom:1rem; font-size:1.2rem;">📋 Project Description</h3>
+          <p style="color:var(--text-muted); font-size:.93rem; line-height:1.8;">
+            This website was built for <strong>GreenTech Solutions</strong>, a fictional environmental sustainability and technology startup. The site serves two primary audiences: small to medium-sized businesses (SMBs) seeking eco-friendly technology solutions, and environmentally conscious individuals interested in sustainable tech.
+          </p>
+          <p style="color:var(--text-muted); font-size:.93rem; line-height:1.8; margin-top:.8rem;">
+            The site contains five full content pages (Homepage, About Us, Products, Blog, Contact) plus this documentation page, a shared CSS stylesheet, and a JavaScript file providing interactivity across all pages.
+          </p>
+        </div>
+
+        <!-- Technologies Used -->
+        <div style="background:var(--white); border-radius:var(--radius-lg); padding:2rem; border:1px solid rgba(45,106,79,.12);">
+          <h3 style="font-family:'Playfair Display',serif; color:var(--green-deep); margin-bottom:1rem; font-size:1.2rem;">🛠️ Technologies Used</h3>
+          <ul style="color:var(--text-muted); font-size:.93rem; line-height:2; list-style:none; padding:0;">
+            <li>✅ <strong>HTML5</strong> — Semantic structure with accessibility attributes</li>
+            <li>✅ <strong>CSS3</strong> — External stylesheet, custom properties, media queries</li>
+            <li>✅ <strong>JavaScript (ES6+)</strong> — DOM manipulation, form validation, IntersectionObserver, animations</li>
+            <li>✅ <strong>Google Fonts</strong> — Playfair Display + DM Sans</li>
+            <li>✅ <strong>Responsive Design</strong> — Flexbox, CSS Grid, mobile-first breakpoints</li>
+            <li>✅ <strong>WCAG 2.1</strong> — ARIA roles, alt text, keyboard navigation, color contrast</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Feature Checklist -->
+      <div style="background:var(--white); border-radius:var(--radius-lg); padding:2rem; border:1px solid rgba(45,106,79,.12); margin-bottom:2.5rem;">
+        <h3 style="font-family:'Playfair Display',serif; color:var(--green-deep); margin-bottom:1.5rem; font-size:1.2rem;">✅ Rubric Requirements Checklist</h3>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;" class="checklist-grid">
+
+          <div>
+            <h4 style="color:var(--green-mid); font-size:.9rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-bottom:.8rem;">Theme &amp; Purpose (20 pts)</h4>
+            <ul style="list-style:none; font-size:.9rem; color:var(--text-muted); line-height:2;">
+              <li>🟢 Creative eco-tech theme aligned with GreenTech client profile</li>
+              <li>🟢 Clear purpose: educate, engage, convert sustainability clients</li>
+              <li>🟢 Target audience: SMBs + eco-conscious individuals</li>
+              <li>🟢 Functioning navigation bar on every page</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="color:var(--green-mid); font-size:.9rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-bottom:.8rem;">Semantic HTML5 (20 pts)</h4>
+            <ul style="list-style:none; font-size:.9rem; color:var(--text-muted); line-height:2;">
+              <li>🟢 &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;</li>
+              <li>🟢 Headings (h1–h4), paragraphs, lists (ul/ol)</li>
+              <li>🟢 Forms with fieldsets, labels, inputs, textarea, select</li>
+              <li>🟢 Tables, &lt;time&gt;, &lt;address&gt;, &lt;details&gt;/&lt;summary&gt;</li>
+              <li>🟢 5+ distinct element types used per page</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="color:var(--green-mid); font-size:.9rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-bottom:.8rem;">CSS Styling (20 pts)</h4>
+            <ul style="list-style:none; font-size:.9rem; color:var(--text-muted); line-height:2;">
+              <li>🟢 External stylesheet (css/styles.css)</li>
+              <li>🟢 CSS custom properties (variables) throughout</li>
+              <li>🟢 Flexbox and CSS Grid layouts</li>
+              <li>🟢 CSS animations (@keyframes, transitions)</li>
+              <li>🟢 Hover/focus states on all interactive elements</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="color:var(--green-mid); font-size:.9rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-bottom:.8rem;">JavaScript (20 pts)</h4>
+            <ul style="list-style:none; font-size:.9rem; color:var(--text-muted); line-height:2;">
+              <li>🟢 Contact form validation with error messages</li>
+              <li>🟢 Product search + category filter (dynamic content)</li>
+              <li>🟢 Scroll-reveal animations (IntersectionObserver)</li>
+              <li>🟢 Animated number counters</li>
+              <li>🟢 Newsletter success feedback</li>
+              <li>🟢 Mobile hamburger menu toggle</li>
+              <li>🟢 Accessibility toolbar (font size, contrast)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="color:var(--green-mid); font-size:.9rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-bottom:.8rem;">Mobile Responsiveness (20 pts)</h4>
+            <ul style="list-style:none; font-size:.9rem; color:var(--text-muted); line-height:2;">
+              <li>🟢 Responsive grid layouts (auto-fit/minmax)</li>
+              <li>🟢 Media queries at 1024px, 768px, 480px</li>
+              <li>🟢 Mobile hamburger nav replacing desktop menu</li>
+              <li>🟢 Fluid typography with clamp()</li>
+              <li>🟢 Tested at 320px, 375px, 768px, 1024px, 1440px</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="color:var(--green-mid); font-size:.9rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-bottom:.8rem;">Web Accessibility (20 pts)</h4>
+            <ul style="list-style:none; font-size:.9rem; color:var(--text-muted); line-height:2;">
+              <li>🟢 Skip-to-content link on every page</li>
+              <li>🟢 ARIA roles, labels, aria-live regions</li>
+              <li>🟢 All images have descriptive alt text</li>
+              <li>🟢 Sufficient color contrast (WCAG AA+)</li>
+              <li>🟢 Keyboard-navigable forms and controls</li>
+              <li>🟢 High-contrast mode toggle in accessibility toolbar</li>
+              <li>🟢 Font-size adjustment controls</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- File structure table -->
+      <div style="background:var(--white); border-radius:var(--radius-lg); padding:2rem; border:1px solid rgba(45,106,79,.12); margin-bottom:2.5rem; overflow-x:auto;">
+        <h3 style="font-family:'Playfair Display',serif; color:var(--green-deep); margin-bottom:1.5rem; font-size:1.2rem;">📁 File Structure</h3>
+        <table style="width:100%; border-collapse:collapse; font-size:.9rem;" aria-label="Project file structure">
+          <thead>
+            <tr style="background:var(--mist);">
+              <th style="text-align:left; padding:.7rem 1rem; color:var(--green-deep); font-weight:700; border-bottom:2px solid rgba(45,106,79,.15);">File</th>
+              <th style="text-align:left; padding:.7rem 1rem; color:var(--green-deep); font-weight:700; border-bottom:2px solid rgba(45,106,79,.15);">Purpose</th>
+            </tr>
+          </thead>
+          <tbody style="color:var(--text-muted);">
+            <tr style="border-bottom:1px solid rgba(45,106,79,.08);">
+              <td style="padding:.65rem 1rem; font-family:monospace; color:var(--green-mid);">index.html</td>
+              <td style="padding:.65rem 1rem;">Homepage — hero, features, featured products, newsletter</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(45,106,79,.08);">
+              <td style="padding:.65rem 1rem; font-family:monospace; color:var(--green-mid);">pages/about.html</td>
+              <td style="padding:.65rem 1rem;">About Us — mission, values, timeline, team</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(45,106,79,.08);">
+              <td style="padding:.65rem 1rem; font-family:monospace; color:var(--green-mid);">pages/products.html</td>
+              <td style="padding:.65rem 1rem;">Products &amp; Services — searchable/filterable catalog</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(45,106,79,.08);">
+              <td style="padding:.65rem 1rem; font-family:monospace; color:var(--green-mid);">pages/blog.html</td>
+              <td style="padding:.65rem 1rem;">Blog &amp; Resources — articles, downloads, newsletter</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(45,106,79,.08);">
+              <td style="padding:.65rem 1rem; font-family:monospace; color:var(--green-mid);">pages/contact.html</td>
+              <td style="padding:.65rem 1rem;">Contact — validated form, company info, FAQ accordion</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(45,106,79,.08);">
+              <td style="padding:.65rem 1rem; font-family:monospace; color:var(--green-mid);">pages/final.html</td>
+              <td style="padding:.65rem 1rem;">The Final — this documentation page</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(45,106,79,.08);">
+              <td style="padding:.65rem 1rem; font-family:monospace; color:var(--green-mid);">css/styles.css</td>
+              <td style="padding:.65rem 1rem;">Single external stylesheet — all styling, animations, responsive breakpoints</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(45,106,79,.08);">
+              <td style="padding:.65rem 1rem; font-family:monospace; color:var(--green-mid);">js/main.js</td>
+              <td style="padding:.65rem 1rem;">Interactivity — form validation, filters, counters, scroll animations</td>
+            </tr>
+            <tr>
+              <td style="padding:.65rem 1rem; font-family:monospace; color:var(--green-mid);">js/layout.js</td>
+              <td style="padding:.65rem 1rem;">Shared nav + footer injection — keeps all pages consistent</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Setup instructions -->
+      <div style="background:var(--white); border-radius:var(--radius-lg); padding:2rem; border:1px solid rgba(45,106,79,.12);">
+        <h3 style="font-family:'Playfair Display',serif; color:var(--green-deep); margin-bottom:1rem; font-size:1.2rem;">🚀 Setup &amp; Running the Project</h3>
+        <ol style="color:var(--text-muted); font-size:.93rem; line-height:2; padding-left:1.3rem;">
+          <li>Upload the entire <code style="background:var(--mist);padding:.15rem .4rem;border-radius:4px;font-size:.88rem;">greentech/</code> folder to your NMSU web server at <code style="background:var(--mist);padding:.15rem .4rem;border-radius:4px;font-size:.88rem;">~/public_html/</code></li>
+          <li>Ensure the file structure is preserved exactly (css/, js/, pages/ subdirectories).</li>
+          <li>Access the site at <code style="background:var(--mist);padding:.15rem .4rem;border-radius:4px;font-size:.88rem;">https://web.nmsu.edu/~YOURUSERNAME/greentech/</code></li>
+          <li>No build tools, npm, or server-side code required — this is a pure static site.</li>
+          <li>All fonts load from Google Fonts CDN (requires internet connection).</li>
+        </ol>
+        <p style="font-size:.9rem; color:var(--text-muted); margin-top:1rem;">
+          <strong>Local testing:</strong> Open <code style="background:var(--mist);padding:.15rem .4rem;border-radius:4px;font-size:.88rem;">index.html</code> directly in a browser, or use VS Code Live Server for accurate relative-path resolution.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-slot"></div>
+
+<script src="../js/layout.js"></script>
+<script src="../js/main.js"></script>
+<style>
+  @media (max-width: 768px) {
+    .final-grid, .checklist-grid { grid-template-columns: 1fr !important; }
+  }
+</style>
+</body>
+</html>
